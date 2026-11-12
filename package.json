@@ -1,0 +1,34 @@
+{
+  "name": "api-aeig",
+  "version": "1.0.0",
+  "description": "Mini-API de Cobranca da AEIG - TypeScript, Fastify e PostgreSQL",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "migrate": "tsx src/db/migrate.ts",
+    "test": "tsx --test src/tests/**/*.test.ts"
+  },
+  "keywords": [
+    "cobranca",
+    "fastify",
+    "typescript",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^5.2.1",
+    "fastify": "^5.2.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@types/node": "^22.10.7",
+    "@types/pg": "^8.11.11",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
